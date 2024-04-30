@@ -48,6 +48,7 @@ const parsePersonalDataFromProfilePage = (data) => {
     const birth_year = parseInt($(".profile-top-info__block__row__data")[3].children[0].data, 10);
     const sex = $(".profile-top-info__block__row__data")[4].children[0].data;
     const title = $(".profile-top-info__block__row__data")[5].children[0].data;
+    const arena_title = $(".profile-top-info__block__row__data")[6]?.children[0].data;
 
     return {
         name,
@@ -55,6 +56,7 @@ const parsePersonalDataFromProfilePage = (data) => {
         birth_year,
         sex,
         title,
+        arena_title,
     };
 };
 
